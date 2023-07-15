@@ -1,0 +1,17 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": ["moleculer", "moleculerjs"],
+  "ignoreWords": [],
+  "import": [],
+  "languageSettings": [
+    {
+      "languageId": "javascript,javascriptreact,markdown,typescript,typescriptreact",
+      "includeRegExpList": ["CStyleComment", "string"],
+      "ignoreRegExpList": ["/from\\s+(['\"]).*\\1/"]
+    }
+  ],
+  "enableFiletypes": ["!json"]
+}
