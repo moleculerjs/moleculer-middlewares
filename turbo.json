@@ -17,16 +17,8 @@
       "outputs": [],
       "outputMode": "full"
     },
-    "dev": {
-      "outputs": [],
-      "cache": false
-    },
     "lint": {
       "dependsOn": ["^forceInternalDependencies"],
-      "outputs": [],
-      "outputMode": "full"
-    },
-    "lint-charts": {
       "outputs": [],
       "outputMode": "full"
     },

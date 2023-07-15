@@ -3,7 +3,14 @@
   "version": "0.0.0",
   "description": "Monorepo Root for Moleculer Middlewares",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon",
+    "coverage": "turbo run coverage --concurrency=1 --log-prefix=none --no-daemon",
+    "lint": "turbo run lint --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon",
+    "lint-cycle": "turbo run lint-cycle --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon",
+    "prettier": "turbo run prettier --concurrency=${TURBO_CONCURRENCY:-90%} --global-deps=\".prettierrc.json\" --no-daemon",
+    "unit": "turbo run unit --concurrency=1 --log-prefix=none --no-daemon",
+    "test": "concurrently --max-processes 1 pnpm:typecheck pnpm:prettier pnpm:lint pnpm:lint-cycle pnpm:coverage",
+    "typecheck": "turbo run typecheck --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon"
   },
   "keywords": [
     "moleculer",
