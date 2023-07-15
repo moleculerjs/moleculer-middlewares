@@ -5,6 +5,10 @@
       "path": ".."
     },
     {
+      "name": "🛠️ @moleculerjs/moleculer-middleware-eslint-config",
+      "path": "../internal/eslint-config"
+    },
+    {
       "name": "🛠️ @moleculerjs/moleculer-middleware-tsconfig",
       "path": "../internal/tsconfig"
     }

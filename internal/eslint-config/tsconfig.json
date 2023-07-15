@@ -1,0 +1,7 @@
+{
+  "extends": "@moleculerjs/moleculer-middleware-tsconfig",
+  "compilerOptions": {
+    "types": ["jest"]
+  },
+  "include": ["__tests__/**/*", "./*.js", "./.*.js"]
+}

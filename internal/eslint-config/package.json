@@ -1,0 +1,39 @@
+{
+  "name": "@moleculerjs/moleculer-middleware-eslint-config",
+  "description": "Eslint configurations for Moleculer Middleware Monorepo",
+  "private": true,
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./globs": "./globs.js",
+    "./globs.js": "./globs.js"
+  },
+  "scripts": {
+    "style:fix": "concurrently --max-processes 1 pnpm:lint:fix pnpm:prettier:fix",
+    "coverage": "jest --maxWorkers=${JEST_WORKERS:-50%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-1G} --ci --collectCoverage --coverageReporters text-summary",
+    "coverage:text": "jest --maxWorkers=${JEST_WORKERS:-50%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-1G} --collectCoverage --coverageReporters text",
+    "coverage:html": "jest --maxWorkers=${JEST_WORKERS:-50%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-1G} --collectCoverage --coverageReporters html",
+    "lint": "TIMING=1 eslint . --ext cjs,mjs,js,jsx,ts,tsx",
+    "lint:fix": "TIMING=1 eslint . --ext cjs,mjs,js,jsx,ts,tsx --fix",
+    "lint-cycle": "dpdm --transform --no-progress --no-tree --no-warning --exit-code circular:1 \"**/*\"",
+    "prettier": "prettier . --ignore-unknown --check",
+    "prettier:fix": "prettier . --ignore-unknown --write",
+    "unit": "jest --maxWorkers=${JEST_WORKERS:-50%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-1G}",
+    "typecheck": "tsc --noEmit && echo \"tsc: no typecheck errors\""
+  },
+  "devDependencies": {
+    "@moleculerjs/moleculer-middleware-tsconfig": "workspace:*",
+    "jest": "*"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.0",
+    "eslint-plugin-jest": "^27.2.0",
+    "eslint-plugin-unicorn": "^48.0.0"
+  }
+}
