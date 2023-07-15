@@ -1,0 +1,57 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["clean", "^build"],
+      "env": ["NODE_ENV"],
+      "outputs": ["dist/**"],
+      "outputMode": "full"
+    },
+    "clean": {
+      "outputs": [],
+      "outputMode": "full",
+      "cache": false
+    },
+    "coverage": {
+      "dependsOn": ["^forceInternalDependencies"],
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "dev": {
+      "outputs": [],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^forceInternalDependencies"],
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "lint-charts": {
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "lint-cycle": {
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "prettier": {
+      "dependsOn": ["^forceInternalDependencies"],
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "unit": {
+      "dependsOn": ["^forceInternalDependencies"],
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "typecheck": {
+      "dependsOn": ["^forceInternalDependencies"],
+      "outputs": [],
+      "outputMode": "full"
+    },
+    "forceInternalDependencies": {
+      "inputs": [],
+      "outputs": []
+    }
+  }
+}
