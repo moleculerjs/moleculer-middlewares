@@ -1,0 +1,29 @@
+{
+  "folders": [],
+  "settings": {
+    "files.eol": "\n",
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "typescript.tsdk": "✨ nextgen\\node_modules\\typescript\\lib",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "monorepoWorkspace.folders.regex.libs": "common|package|lib|private",
+    "monorepoWorkspace.folders.regex.apps": "app",
+    "monorepoWorkspace.folders.regex.tools": "tool|script|util|internal",
+    "monorepoWorkspace.folders.prefix.tools": "🛠️ ",
+    "search.exclude": {
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/coverage": true
+    },
+    "jestrunner.configPath": "jest.config.js",
+    "jestrunner.runOptions": ["--bail=0", "--no-cache", "--testTimeout=10000000"],
+    "jestrunner.debugOptions": {
+      "resolveSourceMapLocations": null
+    },
+    "jestrunner.changeDirectoryToWorkspaceRoot": true
+  }
+}
