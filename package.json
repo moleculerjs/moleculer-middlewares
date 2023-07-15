@@ -1,0 +1,19 @@
+{
+  "name": "moleculer-middlewares",
+  "version": "0.0.0",
+  "description": "Monorepo Root for Moleculer Middlewares",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "moleculer",
+    "MoleculerJS",
+    "middleware"
+  ],
+  "author": "MoleculerJS",
+  "license": "MIT",
+  "packageManager": "pnpm@8.6.7",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
