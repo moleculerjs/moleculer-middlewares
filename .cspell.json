@@ -3,7 +3,7 @@
   "ignorePaths": [],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": ["moleculer", "moleculerjs"],
+  "words": ["batchable", "moleculer", "moleculerjs"],
   "ignoreWords": [],
   "import": [],
   "languageSettings": [

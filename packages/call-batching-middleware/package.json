@@ -18,6 +18,7 @@
     "unit": "jest --maxWorkers=${JEST_WORKERS:-100%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-512M}",
     "typecheck": "tsc --noEmit && echo \"tsc: no typecheck errors\""
   },
+  "repository": "github:moleculerjs/moleculer-middlewares",
   "keywords": [
     "moleculer",
     "MoleculerJS",
@@ -34,6 +35,17 @@
     "@moleculerjs/jest-config-moleculer-middleware": "workspace:*",
     "@moleculerjs/tsconfig-moleculer-middleware": "workspace:*",
     "@types/object-hash": "3.0.2",
-    "eslint-import-resolver-typescript": "3.5.5"
+    "eslint-import-resolver-typescript": "3.5.5",
+    "jest": "*",
+    "jest-mock-extended": "3.0.4",
+    "moleculer": "0.14.30"
+  },
+  "dependencies": {
+    "dataloader": "^2.2.2",
+    "object-hash": "^3.0.0",
+    "p-limit": "^3.1.0"
+  },
+  "peerDependencies": {
+    "moleculer": ">=0.14.30"
   }
 }
