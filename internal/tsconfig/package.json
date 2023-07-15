@@ -1,0 +1,8 @@
+{
+  "name": "@moleculerjs/moleculer-middleware-tsconfig",
+  "description": "Typescript Configuration for Moleculer Middleware Monorepo",
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

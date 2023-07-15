@@ -3,6 +3,10 @@
     {
       "name": "✨ moleculer-middlewares",
       "path": ".."
+    },
+    {
+      "name": "🛠️ @moleculerjs/moleculer-middleware-tsconfig",
+      "path": "../internal/tsconfig"
     }
   ],
   "settings": {
