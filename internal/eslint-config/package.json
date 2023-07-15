@@ -22,7 +22,7 @@
     "typecheck": "tsc --noEmit && echo \"tsc: no typecheck errors\""
   },
   "devDependencies": {
-    "@moleculerjs/moleculer-middleware-tsconfig": "workspace:*",
+    "@moleculerjs/tsconfig-moleculer-middleware": "workspace:*",
     "jest": "*"
   },
   "peerDependencies": {

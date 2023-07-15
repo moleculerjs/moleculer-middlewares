@@ -1,5 +1,5 @@
 {
-  "extends": "@moleculerjs/moleculer-middleware-tsconfig",
+  "extends": "@moleculerjs/tsconfig-moleculer-middleware",
   "compilerOptions": {
     "types": ["jest"]
   },

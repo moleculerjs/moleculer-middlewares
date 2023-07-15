@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@moleculerjs/eslint-config-moleculer-middleware": "workspace:*",
-    "@moleculerjs/moleculer-middleware-tsconfig": "workspace:*",
+    "@moleculerjs/tsconfig-moleculer-middleware": "workspace:*",
     "jest": "*",
     "ts-essentials": "9.3.2"
   },

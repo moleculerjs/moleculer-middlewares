@@ -13,7 +13,7 @@
       "path": "../internal/jest-config"
     },
     {
-      "name": "🛠️ @moleculerjs/moleculer-middleware-tsconfig",
+      "name": "🛠️ @moleculerjs/tsconfig-moleculer-middleware",
       "path": "../internal/tsconfig"
     }
   ],
