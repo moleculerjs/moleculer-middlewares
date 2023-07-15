@@ -5,8 +5,12 @@
       "path": ".."
     },
     {
-      "name": "🛠️ @moleculerjs/moleculer-middleware-eslint-config",
+      "name": "🛠️ @moleculerjs/eslint-config-moleculer-middleware",
       "path": "../internal/eslint-config"
+    },
+    {
+      "name": "🛠️ @moleculerjs/jest-config-moleculer-middleware",
+      "path": "../internal/jest-config"
     },
     {
       "name": "🛠️ @moleculerjs/moleculer-middleware-tsconfig",

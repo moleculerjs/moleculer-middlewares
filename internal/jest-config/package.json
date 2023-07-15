@@ -1,12 +1,10 @@
 {
-  "name": "@moleculerjs/eslint-config-moleculer-middleware",
-  "description": "Eslint configurations for Moleculer Middleware Monorepo",
+  "name": "@moleculerjs/jest-config-moleculer-middleware",
+  "description": "Jest configurations for Moleculer Middleware Monorepo",
   "private": true,
   "main": "index.js",
   "exports": {
-    ".": "./index.js",
-    "./globs": "./globs.js",
-    "./globs.js": "./globs.js"
+    ".": "./index.js"
   },
   "scripts": {
     "style:fix": "concurrently --max-processes 1 pnpm:lint:fix pnpm:prettier:fix",
@@ -22,18 +20,13 @@
     "typecheck": "tsc --noEmit && echo \"tsc: no typecheck errors\""
   },
   "devDependencies": {
+    "@moleculerjs/eslint-config-moleculer-middleware": "workspace:*",
     "@moleculerjs/moleculer-middleware-tsconfig": "workspace:*",
-    "jest": "*"
+    "jest": "*",
+    "ts-essentials": "9.3.2"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.45.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.1.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.0",
-    "eslint-plugin-jest": "^27.2.0",
-    "eslint-plugin-unicorn": "^48.0.0"
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
   }
 }
