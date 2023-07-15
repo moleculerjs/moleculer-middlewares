@@ -12,6 +12,7 @@
     "test": "concurrently --max-processes 1 pnpm:typecheck pnpm:prettier pnpm:lint pnpm:lint-cycle pnpm:coverage",
     "typecheck": "turbo run typecheck --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon"
   },
+  "repository": "github:moleculerjs/moleculer-middlewares",
   "keywords": [
     "moleculer",
     "MoleculerJS",
