@@ -15,6 +15,10 @@
     {
       "name": "🛠️ @moleculerjs/tsconfig-moleculer-middleware",
       "path": "../internal/tsconfig"
+    },
+    {
+      "name": "📦 @moleculerjs/call-batching-middleware",
+      "path": "../packages/call-batching-middleware"
     }
   ],
   "settings": {

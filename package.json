@@ -1,7 +1,7 @@
 {
   "name": "moleculer-middlewares",
-  "version": "0.0.0",
   "description": "Monorepo Root for Moleculer Middlewares",
+  "private": true,
   "scripts": {
     "build": "turbo run build --concurrency=${TURBO_CONCURRENCY:-90%} --no-daemon",
     "coverage": "turbo run coverage --concurrency=1 --log-prefix=none --no-daemon",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@types/eslint": "8.44.0",
     "@types/jest": "29.5.3",
+    "@types/node": "16.18.38",
     "@typescript-eslint/eslint-plugin": "6.0.0",
     "@typescript-eslint/parser": "6.0.0",
     "concurrently": "8.2.0",

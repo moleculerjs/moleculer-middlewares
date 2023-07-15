@@ -1,0 +1,15 @@
+{
+  "extends": "@moleculerjs/tsconfig-moleculer-middleware",
+  "compilerOptions": {
+    /* Modules */
+    "baseUrl": "./" /* Specify the base directory to resolve non-relative module names. */,
+    "types": ["jest", "node", "object-hash"]
+  },
+  "include": [
+    "src/**/*", // source folder
+    "./.*.cjs", // root commonjs files
+    "./.*.mjs", // root esm files
+    "./*.js", // root javascript files
+    "./.*.js" // root javascript config files
+  ]
+}

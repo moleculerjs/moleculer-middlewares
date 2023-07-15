@@ -1,0 +1,39 @@
+{
+  "name": "@moleculerjs/call-batching-middleware",
+  "version": "0.0.0",
+  "description": "Moleculer Middleware to automatically batch calls to actions",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Error: Build script not configured yet\" && exit 1",
+    "clean": "rimraf dist",
+    "coverage": "jest --maxWorkers=${JEST_WORKERS:-100%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-512M} --ci --collectCoverage --coverageReporters text-summary",
+    "coverage:text": "jest --maxWorkers=${JEST_WORKERS:-100%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-512M} --collectCoverage --coverageReporters text",
+    "coverage:html": "jest --maxWorkers=${JEST_WORKERS:-100%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-512M} --collectCoverage --coverageReporters html",
+    "lint": "TIMING=1 eslint . --ext cjs,mjs,js,ts",
+    "lint:fix": "TIMING=1 eslint . --ext cjs,mjs,js,ts --fix",
+    "lint-cycle": "dpdm --transform --no-progress --no-tree --no-warning --exit-code circular:1 \"**/*\"",
+    "prettier": "prettier . --ignore-unknown --check",
+    "prettier:fix": "prettier . --ignore-unknown --write",
+    "style:fix": "concurrently --max-processes 1 pnpm:lint:fix pnpm:prettier:fix",
+    "unit": "jest --maxWorkers=${JEST_WORKERS:-100%} --workerIdleMemoryLimit=${JEST_IDLE_MEMORY:-512M}",
+    "typecheck": "tsc --noEmit && echo \"tsc: no typecheck errors\""
+  },
+  "keywords": [
+    "moleculer",
+    "MoleculerJS",
+    "middleware",
+    "batching"
+  ],
+  "author": "MoleculerJS",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@moleculerjs/eslint-config-moleculer-middleware": "workspace:*",
+    "@moleculerjs/jest-config-moleculer-middleware": "workspace:*",
+    "@moleculerjs/tsconfig-moleculer-middleware": "workspace:*",
+    "@types/object-hash": "3.0.2",
+    "eslint-import-resolver-typescript": "3.5.5"
+  }
+}
