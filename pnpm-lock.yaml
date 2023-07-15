@@ -1,13 +1,16 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
-devDependencies:
-  prettier:
-    specifier: ^3.0.0
-    version: 3.0.0
+importers:
+
+  .:
+    devDependencies:
+      prettier:
+        specifier: ^3.0.0
+        version: 3.0.0
 
 packages:
 
