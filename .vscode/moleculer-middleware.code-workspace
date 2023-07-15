@@ -1,5 +1,10 @@
 {
-  "folders": [],
+  "folders": [
+    {
+      "name": "✨ moleculer-middlewares",
+      "path": ".."
+    }
+  ],
   "settings": {
     "files.eol": "\n",
     "javascript.format.enable": false,
