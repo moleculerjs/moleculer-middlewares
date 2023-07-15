@@ -1,0 +1,8 @@
+# Automatically generated pnpm lockfile
+pnpm-lock.yaml
+
+# pnpm store folder (only for CI)
+.pnpm-store
+
+# turborepo
+.turbo/**
