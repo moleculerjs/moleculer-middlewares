@@ -9,52 +9,52 @@ importers:
   .:
     devDependencies:
       '@types/eslint':
-        specifier: ^8.44.0
+        specifier: 8.44.0
         version: 8.44.0
       '@types/jest':
-        specifier: ^29.5.3
+        specifier: 29.5.3
         version: 29.5.3
       '@typescript-eslint/eslint-plugin':
-        specifier: ^6.0.0
+        specifier: 6.0.0
         version: 6.0.0(@typescript-eslint/parser@6.0.0)(eslint@8.45.0)(typescript@5.1.6)
       '@typescript-eslint/parser':
-        specifier: ^6.0.0
+        specifier: 6.0.0
         version: 6.0.0(eslint@8.45.0)(typescript@5.1.6)
       concurrently:
-        specifier: ^8.2.0
+        specifier: 8.2.0
         version: 8.2.0
       dpdm:
-        specifier: ^3.13.1
+        specifier: 3.13.1
         version: 3.13.1
       eslint:
-        specifier: ^8.45.0
+        specifier: 8.45.0
         version: 8.45.0
       eslint-config-airbnb-base:
-        specifier: ^15.0.0
+        specifier: 15.0.0
         version: 15.0.0(eslint-plugin-import@2.27.5)(eslint@8.45.0)
       eslint-config-airbnb-typescript:
-        specifier: ^17.1.0
+        specifier: 17.1.0
         version: 17.1.0(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint-plugin-import@2.27.5)(eslint@8.45.0)
       eslint-config-prettier:
-        specifier: ^8.8.0
+        specifier: 8.8.0
         version: 8.8.0(eslint@8.45.0)
       eslint-plugin-import:
-        specifier: ^2.27.5
+        specifier: 2.27.5
         version: 2.27.5(@typescript-eslint/parser@6.0.0)(eslint@8.45.0)
       eslint-plugin-jest:
-        specifier: ^27.2.3
+        specifier: 27.2.3
         version: 27.2.3(@typescript-eslint/eslint-plugin@6.0.0)(eslint@8.45.0)(jest@29.6.1)(typescript@5.1.6)
       eslint-plugin-unicorn:
-        specifier: ^48.0.0
+        specifier: 48.0.0
         version: 48.0.0(eslint@8.45.0)
       jest:
-        specifier: ^29.6.1
+        specifier: 29.6.1
         version: 29.6.1
       prettier:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       typescript:
-        specifier: ^5.1.6
+        specifier: 5.1.6
         version: 5.1.6
 
   internal/eslint-config:
